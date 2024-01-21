@@ -1,7 +1,6 @@
 import React from 'react'
 
-export default function ProjectList(props) {
-  const { projects } = props;
+export default function ProjectList({projects}) {
   
   return (
     <ul className='projectlist'>

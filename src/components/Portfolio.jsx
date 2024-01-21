@@ -31,16 +31,15 @@ export class Portfolio extends React.Component {
   }
 
   render() {
-    const { selected, projects } = this.state;
 
     return (
       <div>
         <Toolbar
           filters={["All", "Websites", "Flayers", "Business Cards"]}
-          selected={selected}
+          selected={this.state.selected}
           onSelectFilter={this.handleClick}
         />
-        <ProjectList projects={projects} />
+        <ProjectList projects={this.state.projects} />
       </div>
     );
   }
